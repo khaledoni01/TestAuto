@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+
+	<groups>
+		<run>
+			<include name="regression" />
+		</run>
+	</groups>
+	
+<!-- 	<listeners>
+		<listener class-name="testPackage.ListenerClass"></listener>
+	</listeners> -->
+
+	<parameter name="baseURL" 
+  	value="file:///C:/Users/khale/OneDrive/Desktop/Misc/NK%20TECH%20Solutions/Automation/WebPage/index.html" />
+  	<parameter name="browserVersion" 
+  	value="./drivers/chromedriver_105.exe" />
+  	
+  <test name="Test">
+   
+	<classes>
+		<class name="pageTests.WebTest" />
+		<class name="pageTests.AlertTest" />
+	</classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->

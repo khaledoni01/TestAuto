@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="1346" started-at="2022-10-15T15:37:01Z" finished-at="2022-10-15T15:37:03Z">
+    <groups>
+      <group name="regression">
+        <method signature="AlertTest.alertTest()[pri:0, instance:pageTests.AlertTest@1fe20588]" name="alertTest" class="pageTests.AlertTest"/>
+        <method signature="WebTest.testOne()[pri:0, instance:pageTests.WebTest@147ed70f]" name="testOne" class="pageTests.WebTest"/>
+      </group> <!-- regression -->
+    </groups>
+    <test name="Test" duration-ms="1346" started-at="2022-10-15T15:37:01Z" finished-at="2022-10-15T15:37:03Z">
+      <class name="pageTests.AlertTest">
+        <test-method status="PASS" signature="alertTest()[pri:0, instance:pageTests.AlertTest@1fe20588]" name="alertTest" duration-ms="311" started-at="2022-10-15T11:37:02Z" finished-at="2022-10-15T11:37:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- alertTest -->
+      </class> <!-- pageTests.AlertTest -->
+      <class name="pageTests.WebTest">
+        <test-method status="PASS" signature="launchBrowser(java.lang.String, java.lang.String)[pri:0, instance:pageTests.WebTest@147ed70f]" name="launchBrowser" is-config="true" duration-ms="3148" started-at="2022-10-15T11:36:58Z" finished-at="2022-10-15T11:37:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:///C:/Users/khale/OneDrive/Desktop/Misc/NK%20TECH%20Solutions/Automation/WebPage/index.html]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[./drivers/chromedriver_105.exe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="testOne()[pri:0, instance:pageTests.WebTest@147ed70f]" name="testOne" duration-ms="990" started-at="2022-10-15T11:37:01Z" finished-at="2022-10-15T11:37:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOne -->
+      </class> <!-- pageTests.WebTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

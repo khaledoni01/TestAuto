@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="baseURL" value="file:///C:/Users/khale/OneDrive/Desktop/Misc/NK%20TECH%20Solutions/Automation/WebPage/index.html"/>
+  <parameter name="browserVersion" value="./drivers/chromedriver_105.exe"/>
+  <test name="Test(failed)">
+    <groups>
+      <run>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="pageTests.WebTest">
+        <methods>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- pageTests.WebTest -->
+      <class name="pageTests.AlertTest">
+        <methods>
+          <include name="alertTest"/>
+        </methods>
+      </class> <!-- pageTests.AlertTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
