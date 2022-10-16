@@ -10,8 +10,8 @@
 	</groups>
 	
 	<listeners>
-<!-- 		<listener class-name="testPackage.ListenerClass"></listener>
- -->	</listeners>
+		<listener class-name="pageTests.TestListenerClass"></listener>
+	</listeners>
 
 	<parameter name="baseURL" 
   	value="file:///C:/Users/khale/OneDrive/Desktop/Misc/NK%20TECH%20Solutions/Automation/WebPage/index.html" />

@@ -1,23 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="3" passed="2">
+<testng-results skipped="0" failed="0" ignored="2" total="6" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="1346" started-at="2022-10-15T15:37:01Z" finished-at="2022-10-15T15:37:03Z">
+  <suite name="Suite" duration-ms="2872" started-at="2022-10-16T14:50:32Z" finished-at="2022-10-16T14:50:35Z">
     <groups>
       <group name="regression">
-        <method signature="AlertTest.alertTest()[pri:0, instance:pageTests.AlertTest@1fe20588]" name="alertTest" class="pageTests.AlertTest"/>
-        <method signature="WebTest.testOne()[pri:0, instance:pageTests.WebTest@147ed70f]" name="testOne" class="pageTests.WebTest"/>
+        <method signature="AlertTest.alertTest()[pri:0, instance:pageTests.AlertTest@318ba8c8]" name="alertTest" class="pageTests.AlertTest"/>
+        <method signature="WebTest.testOne(java.lang.String, java.lang.String)[pri:0, instance:pageTests.WebTest@25d250c6]" name="testOne" class="pageTests.WebTest"/>
       </group> <!-- regression -->
     </groups>
-    <test name="Test" duration-ms="1346" started-at="2022-10-15T15:37:01Z" finished-at="2022-10-15T15:37:03Z">
-      <class name="pageTests.AlertTest">
-        <test-method status="PASS" signature="alertTest()[pri:0, instance:pageTests.AlertTest@1fe20588]" name="alertTest" duration-ms="311" started-at="2022-10-15T11:37:02Z" finished-at="2022-10-15T11:37:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- alertTest -->
-      </class> <!-- pageTests.AlertTest -->
+    <test name="Test" duration-ms="2872" started-at="2022-10-16T14:50:32Z" finished-at="2022-10-16T14:50:35Z">
       <class name="pageTests.WebTest">
-        <test-method status="PASS" signature="launchBrowser(java.lang.String, java.lang.String)[pri:0, instance:pageTests.WebTest@147ed70f]" name="launchBrowser" is-config="true" duration-ms="3148" started-at="2022-10-15T11:36:58Z" finished-at="2022-10-15T11:37:01Z">
+        <test-method status="PASS" signature="launchBrowser(java.lang.String, java.lang.String)[pri:0, instance:pageTests.WebTest@25d250c6]" name="launchBrowser" is-config="true" duration-ms="3344" started-at="2022-10-16T10:50:28Z" finished-at="2022-10-16T10:50:32Z">
           <params>
             <param index="0">
               <value>
@@ -33,11 +27,65 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="testOne()[pri:0, instance:pageTests.WebTest@147ed70f]" name="testOne" duration-ms="990" started-at="2022-10-15T11:37:01Z" finished-at="2022-10-15T11:37:02Z">
+        <test-method status="PASS" signature="testOne(java.lang.String, java.lang.String)[pri:0, instance:pageTests.WebTest@25d250c6]" name="testOne" duration-ms="486" started-at="2022-10-16T10:50:33Z" data-provider="loginData" finished-at="2022-10-16T10:50:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[kz1121]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test1234]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testOne -->
+        <test-method status="PASS" signature="testOne(java.lang.String, java.lang.String)[pri:0, instance:pageTests.WebTest@25d250c6]" name="testOne" duration-ms="370" started-at="2022-10-16T10:50:33Z" data-provider="loginData" finished-at="2022-10-16T10:50:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[zk5242]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOne -->
+        <test-method status="PASS" signature="testOne(java.lang.String, java.lang.String)[pri:0, instance:pageTests.WebTest@25d250c6]" name="testOne" duration-ms="389" started-at="2022-10-16T10:50:34Z" data-provider="loginData" finished-at="2022-10-16T10:50:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[it2411]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOne -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:pageTests.WebTest@25d250c6]" name="closeBrowser" is-config="true" duration-ms="614" started-at="2022-10-16T10:50:35Z" finished-at="2022-10-16T10:50:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
       </class> <!-- pageTests.WebTest -->
+      <class name="pageTests.AlertTest">
+        <test-method status="PASS" signature="alertTest()[pri:0, instance:pageTests.AlertTest@318ba8c8]" name="alertTest" duration-ms="465" started-at="2022-10-16T10:50:34Z" finished-at="2022-10-16T10:50:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- alertTest -->
+      </class> <!-- pageTests.AlertTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

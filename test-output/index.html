@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -107,7 +107,17 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="pageTests.WebTest" hash-for-method="testOne">testOne</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="pageTests.WebTest" hash-for-method="testOne(kz1121, test1234)">testOne(kz1121, test1234)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="pageTests.WebTest" hash-for-method="testOne(it2411, test1234)">testOne(it2411, test1234)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="pageTests.WebTest" hash-for-method="testOne(zk5242, test1234)">testOne(zk5242, test1234)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -130,9 +140,26 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testOne">
-                  </a> <!-- testOne -->
+                  <a name="testOne(kz1121, test1234)">
+                  </a> <!-- testOne(kz1121, test1234) -->
                   <span class="method-name">testOne</span>
+                  <span class="parameters">(kz1121, test1234)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testOne(it2411, test1234)">
+                  </a> <!-- testOne(it2411, test1234) -->
+                  <span class="method-name">testOne</span>
+                  <span class="parameters">(it2411, test1234)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testOne(zk5242, test1234)">
+                  </a> <!-- testOne(zk5242, test1234) -->
+                  <span class="method-name">testOne</span>
+                  <span class="parameters">(zk5242, test1234)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -164,6 +191,9 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
   &lt;parameter name=&quot;baseURL&quot; value=&quot;file:///C:/Users/khale/OneDrive/Desktop/Misc/NK%20TECH%20Solutions/Automation/WebPage/index.html&quot;/&gt;
   &lt;parameter name=&quot;browserVersion&quot; value=&quot;./drivers/chromedriver_105.exe&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;pageTests.TestListenerClass&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;groups&gt;
     &lt;run&gt;
       &lt;include name=&quot;regression&quot;/&gt;
@@ -224,15 +254,23 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testOne')
 data.setCell(0, 2, 'pageTests.WebTest')
-data.setCell(0, 3, 990);
+data.setCell(0, 3, 486);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'alertTest')
 data.setCell(1, 2, 'pageTests.AlertTest')
-data.setCell(1, 3, 311);
+data.setCell(1, 3, 465);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testOne')
+data.setCell(2, 2, 'pageTests.WebTest')
+data.setCell(2, 3, 389);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testOne')
+data.setCell(3, 2, 'pageTests.WebTest')
+data.setCell(3, 3, 370);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -252,13 +290,15 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">pageTests.AlertTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">launchBrowser</span>
+                <br/>
+                <span class="ignored-method-name">closeBrowser</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -276,16 +316,31 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
-                <span class="method-name">testOne</span>
-                <span class="method-start">3187 ms</span>
+                <span class="method-name">testOne(kz1121, test1234)</span>
+                <span class="method-start">4491 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testOne(zk5242, test1234)</span>
+                <span class="method-start">4982 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testOne(it2411, test1234)</span>
+                <span class="method-start">5354 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">pageTests.AlertTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">alertTest</span>
-                <span class="method-start">4181 ms</span>
+                <span class="method-start">5747 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">pageTests.WebTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">6248 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
